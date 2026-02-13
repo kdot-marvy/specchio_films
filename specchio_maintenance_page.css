@@ -1,0 +1,157 @@
+/* Space Grotesk — Light 4‑style set */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Layout foundation */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #F5CB5C;
+  color: #242423;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand logo (top-left) */
+.brand-logo {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.brand-logo img {
+  width: 160px;
+  height: auto;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Main centered container */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Main paragraph (intro) */
+.container p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  max-width: 490px;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+/* Single section above the two columns */
+.single-section p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Two items: left sticks left, right sticks right */
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.section {
+  flex: 1;
+}
+
+.section p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.section:first-child {
+  text-align: left;
+}
+
+.section:last-child {
+  text-align: right;
+}
+
+.section a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom single section */
+.single-section-bottom p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive stacking */
+@media (max-width: 600px) {
+  .info-sections {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .section {
+    text-align: center !important;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin: 0;
+}
