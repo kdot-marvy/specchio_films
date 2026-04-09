@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('SpaceGrotesk-Light.woff2') format('woff2'),
+        url('SpaceGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('Inter18pt-Bold.woff2') format('woff2'),
+        url('Inter18pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
