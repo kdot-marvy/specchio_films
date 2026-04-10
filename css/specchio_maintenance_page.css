@@ -204,7 +204,8 @@ body {
 @media (max-width: 600px) {
   /* Shift content upward more on small mobile */
   .container {
-    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .brand-logo {
